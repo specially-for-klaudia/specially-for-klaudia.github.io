@@ -1,0 +1,49 @@
+:root {
+  --dark-grey: #1e1e1e;
+  --light-grey: #252526;
+  --white: #ffffff;
+  --blue: #007acc;
+
+  --spacer: 3rem;
+
+  color-scheme: dark;
+}
+
+body {
+  color: var(--white);
+  background: var(--dark-grey);
+  margin: 0;
+  padding: 0;
+}
+
+.scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: var(--spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.snap {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--spacer);
+}
+
+.snap>* {
+  scroll-snap-align: start;
+}
+
+.scroller-element {
+  background: var(--light-grey);
+  margin: var(--spacer);
+  border-radius: var(--spacer);
+}
+
+.scroller-element-header {
+  text-align: center;
+}
+
+.scroller-element-content {
+  margin: 5rem;
+}
