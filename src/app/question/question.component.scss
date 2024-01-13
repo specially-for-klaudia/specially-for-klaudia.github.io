@@ -1,0 +1,12 @@
+form {
+  margin: 2rem;
+  width: minmax(1000px, 100svw);
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+}
+
+form div {
+  display: flex;
+  justify-content: center;
+}
